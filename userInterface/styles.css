@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+h1{
+    font-family: "Irish Grover", system-ui;
+    color: #F4EFDB;
+}
+
+h2{
+    font-family: "Irish Grover", system-ui;
+}
+
+.sidebar{
+    background-color: #A6A179;
+    border-top-right-radius: 25px;
+}
+
+.sidebar-button{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #D9D9D9; /* Button background color */
+    color: #A6A179; /* Button text color */
+    border: none;
+    border: 1px solid #F4EFDB;
+    border-radius: 10px;
+    font-family: "Irish Grover", system-ui;
+    cursor: pointer;
+    box-shadow: 
+    0px 4px 8px rgba(0, 0, 0, 0.1), /* First shadow layer */
+    0px 8px 16px rgba(0, 0, 0, 0.1), /* Second shadow layer */
+    0px 12px 24px rgba(0, 0, 0, 0.1); /* Third shadow layer */
+}
+
+
+/* Hover effect */
+.sidebar-button:hover {
+    background-color: #C6C1AD; /* Change background color on hover */
+    color: #F4EFDB;
+    box-shadow: 
+      0px 6px 12px rgba(0, 0, 0, 0.2), /* First shadow layer on hover */
+      0px 10px 20px rgba(0, 0, 0, 0.2), /* Second shadow layer on hover */
+      0px 14px 28px rgba(0, 0, 0, 0.2); /* Third shadow layer on hover */
+  }
+
+span{
+    font-family: "Itim", cursive;
+}
