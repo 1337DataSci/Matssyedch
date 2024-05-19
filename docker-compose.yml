@@ -1,0 +1,12 @@
+services:
+  backend:
+    container_name: backend
+    build:
+      context: ./app/back-end/matssyedch
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./app/back-end/matssyedch:/backend
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8080"]
+    tty: true
