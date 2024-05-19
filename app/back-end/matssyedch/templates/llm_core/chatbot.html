@@ -1,0 +1,41 @@
+<!-- chatbot/templates/chatbot/chatbot.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+</head>
+<body>
+    <h1>Chat with our AI</h1>
+    <form method="post" id="chatbot-form">
+        {% csrf_token %}
+        <input type="text" name="query" id="query" required>
+        <button type="submit">Send</button>
+    </form>
+    <div id="response"></div>
+
+    <script>
+        document.getElementById('chatbot-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const query = document.getElementById('query').value;
+            fetch("{% url 'chatbot' %}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded',
+                    'X-CSRFToken': '{{ csrf_token }}'
+                },
+                body: new URLSearchParams({
+                    'query': query
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.response) {
+                    document.getElementById('response').innerText = data.response;
+                } else {
+                    document.getElementById('response').innerText = data.error;
+                }
+            });
+        });
+    </script>
+</body>
+</html>
