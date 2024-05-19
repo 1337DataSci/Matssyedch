@@ -45,3 +45,48 @@ h2{
 span{
     font-family: "Itim", cursive;
 }
+
+/* Initial textarea style */
+#dynamic-textarea {
+    transition: height 0.2s ease;
+    overflow-y: hidden; /* Prevent scrollbars from appearing */
+    resize: none; /* Prevent manual resizing */
+}
+
+.chat-body {
+    height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;  /* Enable vertical scrolling when content overflows */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 75%;
+}
+
+.chat-message.user {
+    background-color: #A6A179;
+    color: white;
+    align-self: flex-end;
+}
+
+.chat-message.bot {
+    background-color: #e1e1e1;
+    color: black;
+    align-self: flex-start;
+}
+
+.chat-message p {
+    margin: 0;
+}
+
+.test{
+    max-height: 150px;
+    overflow: auto;
+}
