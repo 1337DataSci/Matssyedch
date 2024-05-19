@@ -2,7 +2,40 @@
 
 This project is an AI-powered travel assistant that can answer questions related to Marrakech, Morocco, based on a set of documents provided. It utilizes the Hugging Face Transformers library and the LangChain framework to create an embeddings-based vector index and a retrieval-based question-answering system.
 
+# Example 
+ input :  
+ ```
+give a planning for tomorrow in marrakech city, i need a place to stay and i need to have a launch and i need to watch a match in at 7 pm
+ ```
 
+![alt text](Screenshot2024-05-1908-11-10.png)
+
+![alt text](Screenshot2024-05-1908-11-40.png)
+
+
+output : 
+
+```
+give a planning for tomorrow in marrakech city, i need a place to stay and i need to have a launch and i need to watch a match in at 7 pm
+
+If you are planning to stay in Marrakech city tomorrow, I would suggest booking a hotel in the Hivernage area, which is known for its proximity to the city center and the train station. You can check out the Savoy Le Grand Hotel Marrakech, which I mentioned earlier, or other options like the Hotel Le Tobsil or the Riad Yacout.
+
+For lunch, you can try the famous Jardin Majorelle, which is a beautiful botanical garden with a restaurant on site. They serve a variety of Moroccan and international dishes.
+
+For the match at 7 pm, you can head to the Stade de Marrakech, which is located in the city center. You can take a taxi or ride-share from your hotel to get there.
+
+As for the planning, I would recommend the following itinerary:
+
+* 10:00 am - Check-in at your hotel and freshen up
+* 11:30 am - Head to the Jardin Majorelle for lunch
+* 1:30 pm - Take a stroll around the nearby streets and explore the local shops and cafes
+* 4:00 pm - Head back to your hotel to rest for a bit
+* 6:00 pm - Get ready for the match
+* 7:00 pm - Watch the match at the Stade de Marrakech
+* 9:00 pm - Head back to your hotel and enjoy a relaxing evening
+
+Please note that this is just a suggestion, and you can adjust the itinerary to fit your own preferences and schedule. Enjoy your trip to Marrakech!
+```
 # overview: 
 
 GenAI-Powered Personalized Itinerary Application for Morocco
