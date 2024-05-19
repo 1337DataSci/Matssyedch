@@ -74,19 +74,19 @@ span{
     background-color: #A6A179;
     color: white;
     align-self: flex-end;
+    border-radius: 25px;
+    font-family: "Itim", cursive;
 }
 
 .chat-message.bot {
-    background-color: #e1e1e1;
     color: black;
     align-self: flex-start;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    font-family: "Itim", cursive;
 }
 
 .chat-message p {
     margin: 0;
-}
-
-.test{
-    max-height: 150px;
-    overflow: auto;
 }
