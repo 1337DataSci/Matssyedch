@@ -1,12 +1,14 @@
+version: '3.8'
+
 services:
-  backend:
-    container_name: backend
+  back-end:
+    container_name: back-end
     build:
       context: ./app/back-end/matssyedch
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
     volumes:
-      - ./app/back-end/matssyedch:/backend
+      - ./app/back-end/matssyedch/:/back-end/
     command: ["python", "manage.py", "runserver", "0.0.0.0:8080"]
     tty: true
